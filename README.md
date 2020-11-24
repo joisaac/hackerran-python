@@ -2,7 +2,7 @@
 These are the solutions I coded in python for all [HackerRank](https://www.hackerrank.com/domains/python) python exercises.
 
 Exercises are classified into:
-- [Easy exercises](https://github.com/joisaac/hackerrank-shell/blob/main/easy-shell.sh)
+- [Easy exercises](https://github.com/joisaac/hackerran-python/blob/main/easy-python.py)
 - [Medium exercises]()
 - [Hard exercises]()
 
