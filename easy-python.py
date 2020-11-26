@@ -30,3 +30,9 @@ print("".join([str(x) for x in range(1,n+1)]))
 
 # List Comprehension
 print([[i,k,k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if sum([i,j,k]) !=n])
+
+# Find the Runner-Up Score!
+n = int(input())
+a = list(set([int(n) for n in input().split()]))
+a.sort()
+print(a[-2])
