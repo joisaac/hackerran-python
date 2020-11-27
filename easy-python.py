@@ -42,4 +42,3 @@ index = int(input())
 students_list = [[input(), float(input())] for _ in range(index)]
 second = sorted(list(set([grade for student,grade in students_list])))[1]
 print("\n".join([name for name,grade in sorted(students_list) if grade == second]))
-
