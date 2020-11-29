@@ -47,3 +47,15 @@ print("\n".join([name for name,grade in sorted(students_list) if grade == second
 index = int(input())
 students = {name: [float(m) for m in marks] for name, *marks in [input().split() for n in range(index)]}
 print(f"{sum(students[input()]) / 3:0.2f}")
+
+# Lists
+n = int(input())
+l = []
+for i in range(n):
+    s = input().split()
+    mthd = s[0]
+    vals = s[1:]
+    if mthd != "print":
+        eval(f"l.{mthd}({','.join(vals)})")
+    else:
+        print(l)
