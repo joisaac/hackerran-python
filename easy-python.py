@@ -59,3 +59,19 @@ for i in range(n):
         eval(f"l.{mthd}({','.join(vals)})")
     else:
         print(l)
+
+# Tuples
+n = int(input())
+print(hash(tuple([int(n) for n in input().split()])))
+
+# Swap case
+def swap_case(s):
+    return s.swapcase()
+
+# String Split and Join
+def split_and_join(line):
+    return "-".join(line.split())
+
+# What's Your Name
+def print_full_name(first_name, last_name):
+    return print(f"Hello {first_name} {last_name}! You just delved into python.")
