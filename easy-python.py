@@ -75,3 +75,13 @@ def split_and_join(line):
 # What's Your Name
 def print_full_name(first_name, last_name):
     return print(f"Hello {first_name} {last_name}! You just delved into python.")
+
+# Mutations
+def mutate_string(string, position, character):
+    l = list(s)
+    l[position] = character 
+    return "".join(list(l))
+
+# Find a string
+def count_substring(string, sub_string):
+    return [string[i:i+len(sub_string)] for i in range(len(string))].count(sub_string)
