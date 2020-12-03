@@ -85,3 +85,18 @@ def mutate_string(string, position, character):
 # Find a string
 def count_substring(string, sub_string):
     return [string[i:i+len(sub_string)] for i in range(len(string))].count(sub_string)
+
+# String Validators
+s = input()
+print(len([c for c in s if c.isalnum()]) > 0)
+print(len([c for c in s if c.isalpha()]) > 0)
+print(len([c for c in s if c.isdigit()]) > 0)
+print(len([c for c in s if c.islower()]) > 0)
+print(len([c for c in s if c.isupper()]) > 0)
+
+s = input()
+print any([c.isalnnum() for c in s])
+print any([c.isalpha() for c in s])
+print any([c.isdigit() for c in s])
+print any([c.islower() for c in s])
+print any([c.isupper() for c in s])
