@@ -100,3 +100,13 @@ print any([c.isalpha() for c in s])
 print any([c.isdigit() for c in s])
 print any([c.islower() for c in s])
 print any([c.isupper() for c in s])
+
+# Text Wrap
+import textwrap
+def wrap(string, max_width):
+    return textwrap.fill(string, max_width)
+
+def print_formatted(number):
+    w = len(bin(number)[2:])
+    for n in range(1,number+1):
+        print(f"{n:{w}d} {n:{w}o} {n:{w}X} {n:{w}b}")
