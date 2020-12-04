@@ -110,3 +110,7 @@ def print_formatted(number):
     w = len(bin(number)[2:])
     for n in range(1,number+1):
         print(f"{n:{w}d} {n:{w}o} {n:{w}X} {n:{w}b}")
+
+# Capitalize!
+def solve(s):
+    return " ".join([c.capitalize() for c in s.split(" ")])
