@@ -20,3 +20,8 @@ def minion_game(string):
     else:
         print("Draw")
 
+# Merge the Tools
+def merge_the_tools(string, k):
+    l = [string[i:i+k] for i in range(0,len(string),k)]
+    for w in l:
+        print("".join(dict.fromkeys(w)))
