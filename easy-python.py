@@ -79,7 +79,7 @@ def print_full_name(first_name, last_name):
 # Mutations
 def mutate_string(string, position, character):
     l = list(s)
-    l[position] = character 
+    l[position] = character
     return "".join(list(l))
 
 # Find a string
