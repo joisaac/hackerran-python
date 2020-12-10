@@ -130,6 +130,6 @@ for i in sorted(list(permutations(n,int(p)))):
 from itertools import combinations
 
 s,c = input().split()
-print(*sorted([l for l in s]), sep="\n")
-for i in combinations(sorted(s),int(c)):
-    print("".join(i))
+for i in range(1, int(c)+1):
+    for j in combinations(sorted(s),i):
+        print("".join(j))
