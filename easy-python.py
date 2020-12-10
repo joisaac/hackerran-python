@@ -114,3 +114,7 @@ def print_formatted(number):
 # Capitalize!
 def solve(s):
     return " ".join([c.capitalize() for c in s.split(" ")])
+
+# itertools.product() 
+a,b = [[int(n) for n in input().split()] for i in range(2)]
+print(*product(a,b))
