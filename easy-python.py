@@ -118,3 +118,18 @@ def solve(s):
 # itertools.product() 
 a,b = [[int(n) for n in input().split()] for i in range(2)]
 print(*product(a,b))
+
+# itertools.permutations()
+from itertools import permutations
+
+n,p = [i for i in input().split()]
+for i in sorted(list(permutations(n,int(p)))):
+    print("".join(i))
+
+# itertools.combinations()
+from itertools import combinations
+
+s,c = input().split()
+print(*sorted([l for l in s]), sep="\n")
+for i in combinations(sorted(s),int(c)):
+    print("".join(i))
